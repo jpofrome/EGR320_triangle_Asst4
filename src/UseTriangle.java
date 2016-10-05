@@ -1,15 +1,14 @@
 /**
- * Created by Ares on 9/15/2016.
+ * Created by John Syfacunda on 9/15/2016.
  */
 
 import java.util.Scanner;
 public class UseTriangle {
     public static void main(String[] args) {
 
-
         while (true) {
             Scanner kb = new Scanner(System.in);
-
+            //variables
             double sideA = 0;
             double sideB = 0;
             double sideC = 0;
@@ -33,7 +32,7 @@ public class UseTriangle {
                 }
             }
             triangle userTriangle = new triangle(sideA, sideB, sideC);
-
+            //tells user what triangle it is
             if (userTriangle.isTriangle()) {
                 if (userTriangle.isEquilateral()){
                     System.out.println("This is an equilateral triangle.\n");  }
